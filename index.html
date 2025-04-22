@@ -85,15 +85,10 @@
             margin-left: -50px;
             margin-top: -15px;
         }
-        
-        #resultModal {
-            display: flex;
-            justify-content: center;
-            align-items: center;   
-            position: fixed;
-            inset: 0;               
-            background-color: rgba(0, 0, 0, 0.5); 
-            z-index: 50;            
+
+        div#resultModal > div {
+            margin: 0px auto;
+            margin-top: 20%;
         }
         
         .modal-content {
@@ -176,7 +171,7 @@
         </div>
         <!-- Result Modal -->
         <div id="resultModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-            <div class="bg-white p-8 rounded-xl max-w-md w-full mx-4 text-center modal-content scale-95 opacity-0">
+            <div class="bg-white p-8 rounded-xl max-w-md w-full mx-4 text-center modal-content scale-95 opacity-0 inner-container">
                 <h2 class="text-2xl font-bold mb-4" id="resultTitle">You Won!</h2>
                 <p class="text-lg mb-6" id="resultMessage">The wheel landed on <span class="font-bold">Apple</span> and you won <span class="font-bold text-green-600">100</span> coins!</p>
                 <button id="closeModal" class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors">
