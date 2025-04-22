@@ -85,8 +85,21 @@
             margin-left: -50px;
             margin-top: -15px;
         }
+        
+        #resultModal {
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+            position: fixed;
+            inset: 0;               
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: 50;            
+        }
+        
         .modal-content {
-            transition: all 0.3s ease-out;
+            transform: scale(0.95); 
+            opacity: 0;             
+            transition: all 0.3s ease-out; 
         }
         .segment {
             position: absolute;
